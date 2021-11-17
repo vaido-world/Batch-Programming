@@ -2,7 +2,7 @@
 REM Integrates binary into C:/Windows Folder.
 
 REM Creates .cmd script files inside C:/Windows
-REM These .cmd script files are simply launching the binaries.
+REM These .cmd script files are simply launching the binaries - act as a shortcut to the binaries.
 
 
 REM This is assumed to be used in combination with updating PATH variables.
