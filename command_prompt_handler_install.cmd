@@ -1,4 +1,6 @@
 @ECHO OFF
+REM command_prompt_handler.cmd Gives Immediate Access to the binaries on already opened Command Prompt Windows.
+
 cd "%~dp0"
 REM Requires Administrator Privilegies
 call ".\command_prompt_handler.cmd"
