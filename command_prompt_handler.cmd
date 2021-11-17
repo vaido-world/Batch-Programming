@@ -2,8 +2,10 @@
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 REM Requires Administrator Privilegies
-FOR /F %%u IN (%appdata%\dmd_handlers.txt) DO DEL %%u
-DEL "%appdata%\dmd_handlers.txt"
+IF EXIST "%appdata%\dmd_handlers.txt" (
+	FOR /F %%u IN (%appdata%\dmd_handlers.txt) DO DEL %%u
+	DEL "%appdata%\dmd_handlers.txt"
+)
 
 FOR %%i IN (%SystemDrive%\D\dmd2\windows\bin\*.exe) DO (
 	SET "outputFile=%%~ni.cmd"
