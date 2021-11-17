@@ -5,6 +5,8 @@ REM While updating the PATH variables is a proper way to introduce binaries syst
 REM the PATH variables are only available to the new instances of Command Prompt.
 REM To bypass this limitation, this script copies Script Files into c:\Windows\ Folder.
 REM The Script Files simply launch the binaries.
+REM Since it is assumed that %PATH% paths will be fully updated/refreshed on the next Windows startup:
+REM The handlers are removed from the c:\Windows\ Folder, on the next Windows startup.
 
 REM command_prompt_handler.cmd         Gives Immediate Access to the binaries on already opened Command Prompt Windows.
 REM command_prompt_handler_remove.cmd  Removes handler files on the next Windows Startup.
