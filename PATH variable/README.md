@@ -1,6 +1,7 @@
 Accessing Path variable from Windows Registry    
 
-Current user, user-wide PATH variable   
+Current user, user-wide PATH variable.  
+Note: Does not require administrator privilegies while using `reg.exe`  
 ```
 HKEY_CURRENT_USER\Environment
 ```
