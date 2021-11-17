@@ -14,6 +14,7 @@ REG DELETE "HKEY_CURRENT_USER\Environment" /F /V DUMMY
 ```
 
 ## System-Wide PATH variable  
+Note: Does require administrator privilegies while using `reg.exe`  
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 ```
