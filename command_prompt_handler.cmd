@@ -1,5 +1,7 @@
 @ECHO OFF
 SETLOCAL ENABLEDELAYEDEXPANSION
+
+FOR /F %%u IN (%appdata%\dmd_handlers.txt) DO DEL %%u
 DEL "%appdata%\dmd_handlers.txt"
 FOR %%i IN (%SystemDrive%\D\dmd2\windows\bin\*.exe) DO (
 	SET "outputFile=%%~ni.cmd"
