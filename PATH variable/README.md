@@ -24,6 +24,18 @@ Note: Setx can be used to trigger WM_SETTINGCHANGE with administrator privilegie
 SETX /m DUMMY ""
 REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /F /V DUMMY
 ```
+---
+
+
+> [^1]The PathExt is an Environment Variable that stores a list of the file extensions for operation system to execute. When running a command line that does not contain an extension, the system uses the value of this environment variable to determine which extensions to look for and in what order, such as .com first, follow by .exe, .bat, .cmd, which happens to be the default value stored in the PathExt by Windows.
+>
+> To find out what’s in the PathExt, run the following command in the command prompt window.
+> 
+> echo %pathext%
+
+
+
+[^1]: https://www.nextofwindows.com/what-is-pathext-environment-variable-in-windows
 
 ---
 Reference:
