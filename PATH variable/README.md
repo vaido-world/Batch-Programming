@@ -26,6 +26,7 @@ REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\
 ```
 ---
 
+## Execute file without typing file extension
 
 > [^1]The PathExt is an Environment Variable that stores a list of the file extensions for operation system to execute. When running a command line that does not contain an extension, the system uses the value of this environment variable to determine which extensions to look for and in what order, such as .com first, follow by .exe, .bat, .cmd, which happens to be the default value stored in the PathExt by Windows.
 >
