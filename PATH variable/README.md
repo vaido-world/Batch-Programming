@@ -33,7 +33,7 @@ REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\
 > To find out what’s in the PathExt, run the following command in the command prompt window.
 > 
 > echo %pathext%
-
+> .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 
 
 [^1]: https://www.nextofwindows.com/what-is-pathext-environment-variable-in-windows
